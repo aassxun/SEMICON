@@ -157,7 +157,7 @@ def generate_code(model, dataloader, code_length, device):
         code = torch.zeros([N, code_length]).to(device)
         for batch, (data, targets, index) in enumerate(dataloader):
             data, targets, index = data.to(device), targets.to(device), index.to(device)
-            hash_code, _, _, _, _, _, _, _ = model(data, targets)
+            hash_code = model(data, targets)
             code[index, :] = hash_code.sign()
     model.train()
     return code
