@@ -14,7 +14,7 @@ import models.SEMICON as SEMICON
 
 def train(query_dataloader, train_dataloader, retrieval_dataloader, code_length, args):
 
-    num_classes, att_size, feat_size = args.num_classes, 1, 2048
+    num_classes, att_size, feat_size = args.num_classes, 3, 2048
     model = SEMICON.semicon(code_length=code_length, num_classes=num_classes, att_size=att_size, feat_size=feat_size,
                             device=args.device, pretrained=True)
 
