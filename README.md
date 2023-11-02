@@ -2,6 +2,8 @@
 --------------------------
 The hyper-parameter for \alpha in the paper is 0.15 (It's 0.3 in the paper and we have changed it in the code). We have also provided training logs for the CUB, NABirds, and Food101 datasets. If you find significant discrepancies in the reproduced results, please contact us, and we will do our best to address your concerns.
 
+Paper Link: https://arxiv.org/pdf/2209.13833
+
 ## Environment
 
 Python 3.8.5  
@@ -49,7 +51,8 @@ Taking the CUB200-2011 dataset as an example, the testing command is:
 
 
 If you find this paper or code useful, please cite:
-@inproceedings{shen2022semicon,
+     
+     @inproceedings{shen2022semicon,
   title={SEMICON: A Learning-to-Hash Solution for Large-Scale Fine-Grained Image Retrieval},
   author={Shen, Yang and Sun, Xuhao and Wei, Xiu-Shen and Jiang, Qing-Yuan and Yang, Jian},
   booktitle={European Conference on Computer Vision},
