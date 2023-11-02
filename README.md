@@ -47,3 +47,13 @@ Taking the CUB200-2011 dataset as an example, the testing command is:
 
      python run.py --dataset cub-2011 --root /dataset/CUB2011/CUB_200_2011 --gpu 0 --arch test --batch-size 16 --code-length 12,24,32,48 --wd 1e-4 --info 'CUB-SEMICON'
 
+
+If you find this paper or code useful, please cite:
+@inproceedings{shen2022semicon,
+  title={SEMICON: A Learning-to-Hash Solution for Large-Scale Fine-Grained Image Retrieval},
+  author={Shen, Yang and Sun, Xuhao and Wei, Xiu-Shen and Jiang, Qing-Yuan and Yang, Jian},
+  booktitle={European Conference on Computer Vision},
+  pages={531--548},
+  year={2022},
+  organization={Springer}
+}
