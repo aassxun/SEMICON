@@ -423,7 +423,7 @@ class SEM(nn.Module):
             cam1 = feature.mean(1)
             attn = torch.softmax(cam1.view(x.shape[0], x.shape[2] * x.shape[3]), dim=1)#B,H,W
             std, mean = torch.std_mean(attn)
-            attn = (attn - mean) / (std ** 0.3) + 1 #0.15
+            attn = (attn - mean) / (std ** 0.15) + 1 #0.3
             attn = (attn.view((x.shape[0], 1, x.shape[2], x.shape[3]))).clamp(0, 2)
         return attn
 
