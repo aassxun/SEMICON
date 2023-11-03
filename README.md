@@ -1,6 +1,8 @@
 # SEMICON: A Learning-to-hash Solution for Large-scale Fine-grained Image Retrieval
 --------------------------
-The hyper-parameter for \alpha in the paper is 0.15 (It's 0.3 in the paper and we have changed it in the code). We have also provided some training logs for the CUB, NABirds, and Food101 datasets. If you find significant discrepancies in the reproduced results, please contact us, and we will do our best to address your concerns.
+The hyper-parameter for \alpha in the paper is 0.15 (It's 0.3 in the paper and we have changed it in the code. This will result in about a 1~2-point fluctuation in mAP. If the replication error is 3 points or more, there must be an issue with the code or environment, so please check the code and environment carefully.). We have also provided some training logs for the CUB, NABirds, and Food101 datasets (Logs for ECCV 2022 version please cf SEMICON_log, we have not provide paper for SEMICON++ version). 
+
+If you find significant discrepancies in the reproduced results, you can contact us and we will do our best to address your concerns (Please provide your log files in the email. Otherwise, we cannot determine where the problem lies.).
 
 Paper Link: https://arxiv.org/pdf/2209.13833
 
